@@ -19,14 +19,14 @@ class Client(models.Model):
     
 class Shop(models.Model):
     CATEGORY_CHOICES = [
-    ("fashion","fashion"),
-    ("jewellery","jewellery"),
-    ("electronics","electronics"),
-    ("automotive","automotive"),
-    ("cyber","cyber"),
-    ("elicasies","delicasies"),
-    ("grocery","grocery"),
-    ("retail","retail"),
+    ("fashion","vegetables"),
+    ("jewellery","Fruits"),
+    ("electronics","dairy products"),
+    ("automotive","poutry products"),
+    ("cyber","fish and sea food"),
+    ("delicasies","horticultural products"),
+    ("grocery","livestock products"),
+    ("retail","agricultural products"),
     ]
     owner = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
